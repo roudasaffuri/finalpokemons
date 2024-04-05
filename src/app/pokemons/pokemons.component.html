@@ -1,0 +1,15 @@
+<div class="pokemons"> 
+    <div *ngFor="let pokemon of resultList.results" >
+        <div style="border: 1px solid black; margin: 20px;">
+            <div style="text-align: center;">
+                <img *ngIf="pokemon.image" [src]="pokemon.image" alt="{{ pokemon.name }}">
+                <h3>{{pokemon.name}} </h3>
+            </div>
+        </div>
+    </div>
+    </div> 
+    <div  style="text-align: center; "> 
+    
+    <button class="btn" (click)="getPreviousPokemons()" [disabled]="!resultList.previous" >Previous</button>
+    <button class="btn"  (click)="getNextPokemons()" [disabled]="!resultList.next" >Next</button>
+    </div>

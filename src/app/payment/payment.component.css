@@ -1,0 +1,15 @@
+.container {
+    display: flex; /* or inline-flex */
+    flex-wrap:  wrap ;
+    justify-content : space-evenly;
+  }
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+.ng-invalid{
+  color: red;
+}
+

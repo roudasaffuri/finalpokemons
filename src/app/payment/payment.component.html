@@ -1,0 +1,26 @@
+
+  <form  class="form-container"  (ngSubmit)="onSubmit(form)"   #form="ngForm">
+  
+    <input type="text" placeholder="Enter your full name" ngModel name="name-input"  required  #nameInput='ngModel'  />
+    
+   <span *ngIf=   "(!nameInput.value.includes(' ') && nameInput.touched)" class="ng-invalid" >Name cannot be empty</span>
+  
+  
+  
+    <input type="text" placeholder="Enter your email" required ngModel name="email-input" #emailInput="ngModel"/>
+  <span *ngIf="(emailInput.touched && (!emailInput.value.includes('@') || !emailInput.value.includes('.')))" class="ng-invalid">Email must contain @ and . symbol</span>
+  
+  <diV>
+    <input type="text" placeholder="Phone prefix" required ngModel name="prefix-input" #prefixInput="ngModel" maxlength="3"  />
+    <input type="text" placeholder="Enter your phone number" required ngModel name="phone-input" #phone="ngModel" maxlength="7" pattern="[0-9]*"/>
+    
+    <span *ngIf="(prefixInput.touched && prefixInput.value.length !== 3) || (phone.touched && phone.value.length !== 7)" class="ng-invalid">Error: Phone prefix must be 3 digits and phone number must be 7 digits</span>
+    
+  </diV>
+  <input type="text" placeholder="Enter your credit card number" required ngModel name="credit-CardInput" #creditCardInput="ngModel"/>
+  <span *ngIf="(creditCardInput.touched && creditCardInput.value.length !== 16) " class="ng-invalid" >Error: credit card number must be 16 digits</span>
+  
+    <button type="submit">Payment</button>
+  </form>
+  
+  

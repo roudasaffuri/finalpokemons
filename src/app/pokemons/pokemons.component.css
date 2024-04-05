@@ -1,0 +1,21 @@
+.pokemons{
+    margin: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.btn{
+    margin: 20px;
+    padding:15px;
+    background:#3498db;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    transition:all 0.3s ease;
+}
+button:disabled{
+    cursor: not-allowed;
+  }
