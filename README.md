@@ -58,7 +58,7 @@ This is a simple Angular application that fetches and displays a list of Pokémo
 - Pokémon details, including their images, are loaded asynchronously.
 - The user can click "Next" and "Previous" buttons to navigate through the available Pokémon.
 
-![Pokémon Viewer Screenshot](url_to_image)
+![Pokémon Viewer Screenshot](Screenshot%2024-09-20%20115101.png)
 
 ## Contribution
 
