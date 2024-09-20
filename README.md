@@ -39,28 +39,4 @@ This is a simple Angular application that fetches and displays a list of Pokémo
 - **Pagination**: Users can navigate between pages of Pokémon using "Next" and "Previous" buttons.
 - **Dynamic Updates**: The application updates the displayed Pokémon dynamically as users navigate through the list.
 
-## Technologies Used
-
-- Angular: A platform for building mobile and desktop web applications.
-- HttpClient: Angular's built-in HTTP client for making API calls.
-
-## Getting Started
-
-1. Clone the repository.
-2. Navigate to the project directory.
-3. Run `npm install` to install the necessary dependencies.
-4. Use `ng serve` to start the development server.
-5. Open your browser and go to `http://localhost:4200` to view the application.
-
-## How It Works
-
-- The application initializes by calling the PokéAPI to fetch a list of Pokémon.
-- Pokémon details, including their images, are loaded asynchronously.
-- The user can click "Next" and "Previous" buttons to navigate through the available Pokémon.
-
-![Pokémon Viewer Screenshot](Screenshot%2024-09-20%20115101.png)
-
-## Contribution
-
-Feel free to contribute by submitting issues or pull requests!
 
